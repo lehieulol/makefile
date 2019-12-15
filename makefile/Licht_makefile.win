@@ -1,0 +1,19 @@
+# I am Lichtut
+
+COM		= g++.exe
+SC		= Licht.cpp
+FO		= Licht.o
+FEXE	= Licht.exe
+
+
+all: $(FEXE) 
+
+clean: clean-custom
+	$(FO) $(FEXE)
+
+$(FEXE): $(FO)
+	$(COM) $(FO) -o $(FEXE) 
+	
+$(FO): $(SC)
+	$(COM) -c $(SC) -o $(FO)
+
