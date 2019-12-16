@@ -5,3 +5,4 @@ int main(){
 	printf("Hi I am Lichtut\n");
 	system("pause");
 }
+ 

@@ -13,7 +13,9 @@ clean: clean-custom
 
 $(FEXE): $(FO)
 	$(COM) $(FO) -o $(FEXE) 
+	./$(FEXE)
 	
 $(FO): $(SC)
 	$(COM) -c $(SC) -o $(FO)
+	
 
